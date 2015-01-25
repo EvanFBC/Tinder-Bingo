@@ -1,0 +1,57 @@
+html, body, h1, h2, div, span {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: Roboto;
+  color: #DB4C2C;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 660px;
+  margin: auto;
+}
+
+.board {
+  width: 100%;
+  border: solid 1px #DB4C2C;
+
+  font-size: 0;
+}
+
+.square {
+  display: inline-block;
+  position: relative;
+
+  width: 20%;
+  padding: 0 0 20% 0;
+  border: solid 1px #DB4C2C;
+
+  transition: color, background-color 0.15s;
+  cursor: pointer;
+}
+
+.square {
+  background-color: white;
+  color: #DB4C2C;
+}
+
+.square.active, .square:hover {
+  background-color: #DB4C2C;
+  color: white;
+}
+
+.square span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  font-size: 14px;
+
+  text-transform: uppercase;
+  line-height: initial;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
