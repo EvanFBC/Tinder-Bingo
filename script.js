@@ -3,6 +3,8 @@
 
   function init() {
 
+    FastClick.attach(document.body);
+
     document
       .querySelector( '.board' )
       .addEventListener( 'click', handleClick );
