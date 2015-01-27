@@ -61,7 +61,7 @@ h2 {
 
 @media only screen and (min-width: 660px) {
 
-  .square.active, .square:hover {
+  .square.active, .no-touch .square:hover {
     background-color: #DB4C2C;
     color: white;
   }
